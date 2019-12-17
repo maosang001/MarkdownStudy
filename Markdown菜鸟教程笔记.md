@@ -1,6 +1,7 @@
 # Markdown教程
 
 ## <mark>简述</mark>
+* 该笔记参考https://www.runoob.com/markdown/md-tutorial.html
 * Markdown编写的文档可以导出Html、Word、图像、pdf等多种格式的文档
 * Markdown编写的文档后缀为.md或.markdown
 
@@ -98,6 +99,6 @@ Markdown制作表格使用 | 来分割不同单元格，使用 - 来分割表头
 |单元格|单元格|单元格|
 ***
 ## <mark>Markdown高级技巧</mark>
-* 支持html元素
-* 转义
-* 公式编辑
+* 支持html元素：不在 Markdown 涵盖范围之内的标签，都可以直接在文档里面用 HTML 撰写
+* 转义：Markdown 使用了很多特殊符号来表示特定的意义，如果需要显示特定的符号则需要使用转义字符
+* 公式编辑：当你需要在编辑器中插入数学公式时，可以使用两个美元符 $$ 包裹 TeX 或 LaTeX 格式的数学公式来实现
