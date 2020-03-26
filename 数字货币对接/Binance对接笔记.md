@@ -17,7 +17,7 @@
 * 所有接口的相应都是json格式
 * 响应按时间升序排列
 * 所有时间、时间戳均为UNIX时间，单位为毫秒
-* HTTP返回码具体参考官方说明
+* HTTP返回码具体参考官方说明，接口的错误代码参考官方说明。
 
 #### 接口基本信息
 
@@ -43,4 +43,14 @@
 * USER_DATA：API-Key + 签名
 * USER_STREAM：API-Key 
 * MARKET_DATA：API-Key 
+
+#### signed类型接口
+
+* 交易，账户数据获取等接口需要signature签名。
+* signature类型接口需传递Unix时间戳，其值应为请求发送时刻的Unix时间戳（毫秒），因此需要同步本地时间和binance服务器时间，并根据网络时延设置适当的recvWindow（在这个时间范围内的请求才有效）。
+
+#### 公开Api参数
+
+* 交易对一般写作：base asset_quote asset
+* 
 
